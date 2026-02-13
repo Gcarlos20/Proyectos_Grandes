@@ -1,0 +1,16 @@
+# Java
+.gradle/
+build/
+*.iml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Env
+.env
+
+# IDE
+.vscode/
+.idea/

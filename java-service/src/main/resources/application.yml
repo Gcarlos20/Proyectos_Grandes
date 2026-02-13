@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: java-service
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/enterprise_db}
+    username: ${SPRING_DATASOURCE_USERNAME:enterprise_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:enterprise_pass}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
